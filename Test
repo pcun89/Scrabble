@@ -1,0 +1,11 @@
+import unittest
+
+class TestScrabbleGame(unittest.TestCase):
+    def test_score_word(self):
+        self.assertEqual(score_word("BROWNIE"), 15)
+        self.assertEqual(score_word("HELLO"), 8)
+        self.assertEqual(score_word("WORLD"), 9)
+        self.assertEqual(score_word("PYTHON"), 14)
+
+if __name__ == '__main__':
+    unittest.main()
